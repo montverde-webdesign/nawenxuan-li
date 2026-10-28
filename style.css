@@ -1,11 +1,122 @@
-/* ==========================================================
-   My section's styles
-   Every page in this section uses this one file.
+/* Shared styles for every page in my section. */
+:root {
+  --background: #d2e58e;
+  --text: #273014;
+  --heading: #3e4916;
+  --accent: #8c9e49;
+  --link: #29450f;
+  --surface: #f5f8e9;
+}
 
-   Pages in this main folder link to it with:
-       <link rel="stylesheet" href="style.css">
-   Pages inside warm-ups, classwork, and projects use ../ to go up a folder:
-       <link rel="stylesheet" href="../style.css">
+* {
+  box-sizing: border-box;
+}
 
-   We'll write styles here starting Monday.
-   ========================================================== */
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--surface);
+  border-bottom: 3px solid var(--accent);
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 0;
+  margin: 12px 0 0;
+  list-style: none;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+main {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 20px 32px;
+}
+
+h1,
+h2 {
+  color: var(--heading);
+  line-height: 1.25;
+}
+
+h1 {
+  padding: 16px;
+  border: 5px solid var(--accent);
+  border-bottom-color: var(--heading);
+  font-size: 2rem;
+  overflow-wrap: anywhere;
+}
+
+p {
+  margin: 16px 0;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--heading);
+  background-color: var(--surface);
+  text-decoration-thickness: 3px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--heading);
+  outline-offset: 4px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.categories li {
+  padding: 20px;
+  background-color: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+}
+
+.categories a {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.entries {
+  padding-left: 24px;
+}
+
+.entries li {
+  margin-bottom: 12px;
+}
+
+.breadcrumbs,
+.date {
+  font-size: 0.95rem;
+  color: var(--heading);
+}

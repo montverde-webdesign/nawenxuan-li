@@ -1,11 +1,31 @@
-/* ==========================================================
-   My section's styles
-   Every page in this section uses this one file.
+body {
+  background-color: rgb(210, 229, 142);
+}
+h1 {
+  border: 5px solid rgb(140, 158, 73);
+}
+h1 {
+  border-bottom: 5px solid rgb(62, 73, 22);
+}
+h1{
+  border-style: solid;
+  border-color: rgb(140, 158, 73) rgb(62, 73, 22) rgb(140) rgb(62, 73, 22);
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; 
+  line-height: 1.5;
+  text-align: justify;
+  padding: 10px 5px 15px 20px;
+}   
 
-   Pages in this main folder link to it with:
-       <link rel="stylesheet" href="style.css">
-   Pages inside warm-ups, classwork, and projects use ../ to go up a folder:
-       <link rel="stylesheet" href="../style.css">
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  
+}
 
-   We'll write styles here starting Monday.
-   ========================================================== */
+a:hover {
+  color: green;
+}

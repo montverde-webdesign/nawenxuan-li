@@ -1,0 +1,199 @@
+/* PART A: header, navigation, hero, and stats.
+   Owner: Nawenxuan Li */
+
+.festival-header {
+   padding: 20px 24px;
+   border-bottom: 1px solid #2c2866;
+}
+
+.header-inner {
+   max-width: 1100px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 24px;
+}
+
+.festival-brand {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   color: #f2f0ff;
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 1;
+   letter-spacing: 2px;
+   white-space: nowrap;
+}
+
+.festival-brand .logo {
+   display: block;
+   width: 50px;
+   height: auto;
+}
+
+.festival-nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 32px;
+   line-height: 1.5;
+}
+
+.festival-nav a {
+   color: #f2f0ff;
+   text-decoration: none;
+}
+
+.festival-nav a:hover {
+   color: #2de2e6;
+}
+
+.festival-nav .btn-buy-tickets {
+   color: #2de2e6;
+   border: 2px solid #2de2e6;
+   border-radius: 999px;
+   padding: 8px 20px;
+   font-weight: 600;
+   white-space: nowrap;
+}
+
+.festival-nav .btn-buy-tickets:hover {
+   background-color: #2de2e6;
+   color: #0d0b26;
+}
+
+/* Date and Title */
+.festival-hero {
+   background: linear-gradient (#0d0b26, #1a1745);
+   text-align: center;
+}
+
+.hero-content {
+   padding: 64px 24px 0;
+}
+
+.festival-date {
+   width: fit-content;
+   max-width: 100%;
+   box-sizing: border-box;
+   margin: 0 auto;
+   padding: 6px 18px;
+   border: 2px solid #f9f871;
+   border-radius: 999px;
+   color: #f9f871;
+   font-weight: 600;
+   letter-spacing: 2px;
+   text-align:center;
+   text-transform: uppercase;
+}
+
+.festival-title {
+   margin: 24px 0 8px;
+   color: #f2f0ff;
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 140px;
+   line-height: 1;
+   letter-spacing: 2px;
+   text-shadow: 0 0 24px #ff3d9a;
+}
+
+.festival-title-span {
+   color: #2de2e6;
+}
+
+.festival-description {
+   max-width: 600px;
+   margin: 0 auto;
+   color: #c9c5f5;
+   font-size: 20px;
+}
+
+/* Buttons */
+.hero-buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+   margin-top: 32px;
+}
+
+.hero-button {
+   padding: 12px 28px;
+   border: 3px solid #ff3d9a;
+   border-radius: 999px;
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.tickets-button {
+   background-color: #ff3d9a;
+   color: #f2f0ff;
+}
+
+.lineup-button {
+   color: #ff3d9a;
+}
+
+.hero-button:hover {
+   background-color: #f2f0ff;
+   border-color: #f2f0ff;
+   color: #0d0b26;
+}
+
+.festival-nav a:focus-visible,
+.hero-button:focus-visible {
+   outline: 3px solid #f9f871;
+   outline-offset: 5px;
+}
+
+/* Waves and Stats */
+.hero-artwork {
+   margin-top: 48px;
+   margin-left: 24px;
+   margin-right: 24px;
+}
+
+.hero-waves {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.festival-stats {
+   display: flex;
+   justify-content: center;
+   gap: 96px;
+   padding: 16px 24px 40px;
+   background-color: #1a1745;
+   text-align: center;
+}
+
+.stat-number {
+   margin: 0;
+   color: #f9f871;
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 72px;
+   line-height: 1;
+}
+
+.stat-label {
+   margin: 8px 0 0;
+   color: #c9c5f5;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+/* Phone layout */
+@media (max-width: 760px) {
+   .festival-header {
+      padding: 24px 24px 8px;
+   }
+
+   .header-inner {
+      flex-direction: column;
+      gap: 12px;
+   }
